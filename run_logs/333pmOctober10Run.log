@@ -1,0 +1,54 @@
+Roboman: Default constructor called...
+Listener: Setting x and y location...
+Listener: Setting x location at 210
+Roboman: X Location set to 210
+Roboman: X Location set is true
+Listener: Setting y location at 376
+Roboman: Y Location set to 376
+Roboman: Y Location set is true
+Listener: Setting click location text.
+Listener: Setting amount of clicks to 10
+Roboman: Amount of clicks set to 10
+Roboman: amount of clicks set is true
+Listener: Setting delay to 200
+Roboman: Delay set to 200
+Roboman: Delay set is true
+Listener: Starting auto click...
+Roboman: Performing initial check for autoclick...
+xLocSet: true
+yLocSet: true
+Delay Set: true
+Amount of clicks set: true
+Roboman: Passed initial settings test.
+Roboman: Checking settings with checkSettings method....
+Roboman: Passed check settings... Starting auto click...
+Roboman: Creating timer for specified delay...
+Roboman: Instantiating RobomanClicker class...
+RobomanClicker: Constructor called...
+RobomanClicker: Creating robot...
+RobomanClicker: Robot created...
+Roboman: Starting autoclick...
+Click count: 0
+RobomanClicker: Moving mouse...
+Exception in thread "AWT-EventQueue-0" java.lang.IllegalArgumentException: Invalid combination of button flags
+	at java.awt.Robot.checkButtonsArgument(Robot.java:320)
+	at java.awt.Robot.mousePress(Robot.java:256)
+	at frosty.auto.roboman.RobomanClicker.autoClick(RobomanClicker.java:28)
+	at frosty.auto.roboman.Roboman.actionPerformed(Roboman.java:144)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+RobomanClicker: Pressing down mouse button...

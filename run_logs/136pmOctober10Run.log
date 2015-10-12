@@ -1,0 +1,20 @@
+Roboman: Default constructor called...
+Roboman: Default constructor called...
+Listener: Setting x and y location...
+Listener: Setting x location at 666
+Roboman: X Location set to 666
+Roboman: X Location set is true
+Listener: Setting y location at 428
+Roboman: Y Location set to 428
+Roboman: Y Location set is true
+Listener: Setting click location text.
+Listener: Setting amount of clicks to 300
+Roboman: Amount of clicks set to 300
+Roboman: amount of clicks set is true
+Listener: Setting delay to 200
+Roboman: Delay set to 200
+Roboman: Delay set is true
+Listener: Starting auto click...
+Roboman: Performing initial check for autoclick...
+Roboman: Did not pass initial settings test.
+Roboman: Auto click not started.
