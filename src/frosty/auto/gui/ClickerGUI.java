@@ -20,6 +20,7 @@ import com.frosty.error.reporting.ErrorReport;	// Error reporting class.
  * 
  * @date 	October 11, 2015
  * @author	Frosty Nut
+ * 
  */
 public class ClickerGUI {
 	
@@ -80,7 +81,6 @@ public class ClickerGUI {
 	 * close operations, and then make the window visible.
 	 */
 	public ClickerGUI() {
-		
 		try {
 			UIManager.setLookAndFeel(
 		                UIManager.getCrossPlatformLookAndFeelClassName());
@@ -106,6 +106,7 @@ public class ClickerGUI {
 		windowFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		windowFrame.pack();
 		windowFrame.setVisible(true);
+		
 	}	// Class constructor.
 	
 	
@@ -118,6 +119,7 @@ public class ClickerGUI {
 		
 		btnStart.addActionListener(listener);
 		btnSetClickLocation.addActionListener(listener);
+		
 	}	// createButtons()
 
 
@@ -128,6 +130,7 @@ public class ClickerGUI {
 		clickCountLabel 	= new JLabel("Amount Of Clicks:");
 		clickLocation 		= new JLabel("Click Location: Not set...");
 		clickDelayLabel		= new JLabel("Click Delay");
+		
 	}	// createLabels()
 	
 	
@@ -137,6 +140,7 @@ public class ClickerGUI {
 	private void createTextFields() {
 		clickAmount = new JTextField(25);
 		clickDelay 	= new JTextField(25);
+		
 	}	// createTextFields()
 	
 	
@@ -154,6 +158,7 @@ public class ClickerGUI {
 		windowPanel.add(clickDelay);
 		
 		windowPanel.add(btnStart);
+		
 	}	// addContentoToPanel()
 
 }	// End of class.

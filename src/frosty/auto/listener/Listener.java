@@ -29,8 +29,9 @@ import com.frosty.error.reporting.ErrorReport;
  * @see frosty.auto.gui.ClickerGUI
  * @see com.frosty.error.reporting.ErrorReport
  * 
- * @author	frostynut
  * @date	October 10, 2015
+ * @author	Frosty Nut
+ * 
  */
 public class Listener implements ActionListener {
 	
@@ -95,6 +96,7 @@ public class Listener implements ActionListener {
 		yLoc 			= -1;
 		amountOfClicks	= -1;
 		delay 			= -1;
+		
 	}	// Class constructor.
 	
 	
@@ -106,7 +108,6 @@ public class Listener implements ActionListener {
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
 		if(e.getSource() == ClickerGUI.btnSetClickLocation) {
 			
 			JOptionPane.showMessageDialog(null, setLocationDirections);

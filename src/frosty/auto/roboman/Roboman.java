@@ -1,26 +1,76 @@
 package frosty.auto.roboman;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+
 import javax.swing.*;
 
 import frosty.auto.gui.ClickerGUI;
 
 
+/**
+ * The Roboman class is the "settings" and "control" class for the 
+ * auto clicker.  It will hold the user's specified settings for the
+ * auto clicking operation and will control the auto clicking operation.
+ * <p>
+ * By "control the auto clicking operation", that means that it will tell
+ * the actual class that moves the mouse and clicks it (RobomanClicker)
+ * when to click and will also stop the clicking when it is done.
+ * <p>
+ * This class uses a timer to control when there are clicks.  Each time
+ * the timer goes off, there will be a click, and this class will use
+ * the user's settings to specify when to stop the timer, which will 
+ * then stop the clicks.  
+ * 
+ * @see frosty.auto.roboman.RobomanClicker
+ * 
+ * @date	October 12, 2015
+ * @author	Frosty Nut
+ *
+ */
 public class Roboman implements ActionListener {
 
+	
+	/** By default, the x location is -1 and it will throw an error. */
 	private int xLocation 				= -1;
+	
+	
+	/** By default, the y location is -1 and it will throw an error. */
 	private int yLocation 				= -1;
+	
+	
+	/** By default, the delay is 250 which is 1/4 of a second. */
 	private int delay					= 250;
+	
+	
+	/** By default the amount of clicks is -1 and will throw an error. */
 	private int amountOfClicks			= -1;
+	
+	
+	/** The counter variable counts the amount of clicks. */
 	private int counter					= 0;
 
+	
+	/** Is set to true when the xLocation is set. */
 	private boolean xLocSet 			= false;
+	
+	
+	/** Is set to true when the yLocation is set. */
 	private boolean yLocSet 			= false;
+	
+	
+	/** Is set to true when the delay is set. */
 	private boolean delaySet 			= false;
+	
+	
+	/** Is set to true when the amount of clicks is set. */
 	private boolean amountOfClicksSet 	= false; 
 	
+	
+	/** The timer that will say when to click. */
 	private Timer				clickTimer;
+	
+	
+	/** The class that will actually click the mouse. */
 	private RobomanClicker		robomanClicker;
 	
 	
@@ -55,7 +105,6 @@ public class Roboman implements ActionListener {
 	 * @param numClicks		the number of clicks.
 	 */
 	public Roboman(int x, int y, int delay, int numClicks) {
-		
 		this.xLocation			= x;
 		this.yLocation			= y;
 		this.delay				= delay;
@@ -86,6 +135,7 @@ public class Roboman implements ActionListener {
 			return false;
 		}
 		return true;
+		
 	}	// checkSettings()
 	
 	
@@ -132,6 +182,7 @@ public class Roboman implements ActionListener {
 	public void setXLocation(int x) {
 		this.xLocation	= x;
 		this.xLocSet	= true;
+		
 	}	// setXLocation(int x)
 	
 	
@@ -143,6 +194,7 @@ public class Roboman implements ActionListener {
 	public void setYLocation(int y) {
 		this.yLocation	= y;
 		this.yLocSet	= true;
+		
 	}
 	
 	
@@ -154,6 +206,7 @@ public class Roboman implements ActionListener {
 	public void setDelay(int delay) {
 		this.delay		= delay;
 		this.delaySet	= true;
+		
 	}	// setDelay(int delay)
 	
 	
@@ -165,6 +218,7 @@ public class Roboman implements ActionListener {
 	public void setAmountOfClicks(int numClicks) {
 		this.amountOfClicks		= numClicks;
 		this.amountOfClicksSet	= true;
+		
 	}	// setAmountOfClicks(int numClicks)
 
 	
@@ -189,6 +243,6 @@ public class Roboman implements ActionListener {
 			
 		}
 		
-	}
+	}	// actionPerformed(ActionEvent e)
 	
-}
+}	// End of class.

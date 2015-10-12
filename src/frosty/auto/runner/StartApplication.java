@@ -8,7 +8,10 @@ import com.frosty.file.write.WriteFile;
 
 
 /**
- * Starts the auto click program.
+ * Checks for error reporting directories and then starts the program.
+ * <p>
+ * To start from command line, use:
+ * java StartApplication
  * 
  * @date	October 11, 2015
  * @author	Frosty Nut
@@ -43,6 +46,6 @@ public class StartApplication {
 		
 		new ClickerGUI();
 
-	}
+	}	// main method.
 
-}
+}	// End of class.
